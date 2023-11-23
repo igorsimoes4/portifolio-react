@@ -6,6 +6,71 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --preto: #160d18;
+  --verde-claro: #1ca39e;
+  --verde-escuro: #026f6e;
+  --azul-esverdeado: #09456c;
+  --azul: #23145b;
+  --branco: #ffffff;
+  --cinza: #dcdcdc48;
+  --cinza_bk: #202329;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: black;
+}
+
+/* Fundo da scrollbar */
+::-webkit-scrollbar-track {
+  background-color: var(--cinza); /* Cor cinza claro */
+}
+
+/* Cor da área visível da scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: var(--verde-claro);
+  border-radius: 6px;
+}
+
+/* Para navegadores Mozilla Firefox */
+/* Largura da scrollbar */
+::-moz-scrollbar {
+  width: 12px;
+  background: black;
+}
+
+/* Fundo da scrollbar */
+::-moz-scrollbar-track {
+  background-color: var(--cinza); /* Cor cinza claro */
+}
+
+/* Cor da área visível da scrollbar */
+::-moz-scrollbar-thumb {
+  background-color: var(--verde-claro);
+  border-radius: 6px;
+}
+
+/* Para navegadores Microsoft (Edge, IE) */
+/* Largura da scrollbar */
+::-ms-scrollbar {
+  width: 12px;
+  background: black;
+}
+
+/* Fundo da scrollbar */
+::-ms-scrollbar-track {
+  background-color: var(--cinza); /* Cor cinza claro */
+}
+
+/* Cor da área visível da scrollbar */
+::-ms-scrollbar-thumb {
+  background: var(--verde-claro);
+  border-radius: 6px;
+}
+
+::selection {
+  background-color: var(--verde-claro);
+  color: var(--preto);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,13 +80,27 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+*{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--preto);
+  background-color: #cecfd0;
+}
+
+.bg-tec {
+  background-color: var(--cinza_bk);
+  color: var(--branco);
+}
+.bg-tec:hover {
+  background-color: #32353b;
+  color: var(--branco);
+  cursor: pointer;
+}
+
+.bg_app {
+  background-image: linear-gradient(to right, rgba(32, 35, 41, 0.73), rgba(32, 35, 41, 0.8)), url(/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
