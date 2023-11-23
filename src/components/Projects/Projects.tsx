@@ -3,20 +3,27 @@ import React, { useEffect, useState } from 'react';
 
 
 export const Projects = () => {
-    const [repos, setRepos] = useState([]);
+    interface Repo {
+        name: string;
+        description: string;
+        html_url: string;
+        cover_url: string;
+    }
+    
+    const [repos, setRepos] = useState<Repo[]>([]);
     const username = 'igorsimoes4';
-
+    
     useEffect(() => {
         async function fetchRepositories() {
             try {
                 const response = await fetch(`https://api.github.com/users/${username}/repos`);
-                const repositories = await response.json();
+                const repositories: any[] = await response.json();
         
-                let newRepos = [];
+                let newRepos: Repo[] = [];
         
                 for (const repo of repositories) {
                     const response = await fetch(`https://api.github.com/repos/${username}/${repo.name}/contents`);
-                    const repoContents = await response.json();
+                    const repoContents: any[] = await response.json();
         
                     if (Array.isArray(repoContents)) {
                         const coverFile = repoContents.find(file => file.name === 'cover.png');
@@ -37,9 +44,10 @@ export const Projects = () => {
                 console.error('Erro ao buscar os repositórios:', error);
             }
         }
-    
+        
         fetchRepositories();
     }, []);
+    
 
     return (
         <section id="Projects" className="p-14 w-full scroll-mt-16" >
