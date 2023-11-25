@@ -55,14 +55,14 @@ export const Projects = () => {
                 <h1 className="text-4xl text-white text-center p-0 mb-5">Projetos</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {repos.map((repo, index) => (
-                        <div key={index} className=" bg-white rounded-xl shadow-md overflow-hidden p-[10px]">
+                        <div key={index} className=" bg-[#202329] rounded-xl shadow-md overflow-hidden p-[10px]">
                             <div className=" flex flex-col ">
                                 <div className=" w-full md:shrink-0 sm:flex sm:justify-center flex justify-center items-center">
                                     <img src={repo.cover_url} alt="" className="w-full lg:h-1/2 h-[100%] p-1 justify-center items-center" />
                                 </div>
                                 <div className=" w-full p-8">                            
-                                    <a href={repo.html_url} target="_blank" className="block mt-1 text-lg leading-tight font-medium capitalize text-black hover:underline">{repo.name}</a>
-                                    <p className="mt-2 text-slate-500 text-justify indent-3">{repo.description || 'Descrição não disponível'}</p>
+                                    <a href={repo.html_url} target="_blank" className="block mt-1 text-lg leading-tight font-medium capitalize text-white hover:underline">{repo.name}</a>
+                                    <p className="mt-2 text-slate-100 text-justify indent-3">{repo.description || 'Descrição não disponível'}</p>
                                 </div>
                             </div>
                         </div>
