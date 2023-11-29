@@ -7,7 +7,7 @@ export const Experience = () => {
                     <div className=" bg-experience rounded-xl shadow-md overflow-hidden">
                         <div className="w-full flex flex-col lg:flex-row">
                             <div className="lg:w-1/4 w-full sm:justify-center flex justify-center">
-                                <img src="https://scontent.fpoa47-1.fna.fbcdn.net/v/t39.30808-6/295340970_1999801200211811_6667735421717615039_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEVfkAwLYka_0T7OumS7P7Y82gfMZx384LzaB8xnHfzgkI8m4OnrVE_whR2rI-lsUXuf_FYlUsReGzAuT2YysCX&_nc_ohc=tDgfoMQ_SV8AX_noRyF&_nc_ht=scontent.fpoa47-1.fna&oh=00_AfAg5oWnA6ICOXmqK23KElbkfPwHz2HACgyyncweCB4b6w&oe=65618807" alt="" className=" w-[100%] justify-center items-center" />                                    
+                                <img src="/images/logo_guanella.jpg" alt="" className=" w-[100%] justify-center items-center" />                                    
                             </div>
                             <div className="lg:w-3/4 w-full p-8">                            
                                 <h3 className="block mt-1 text-lg leading-tight font-medium text-white">Técnico de TI</h3>
