@@ -6,13 +6,8 @@ import { Tooltip } from "@nextui-org/tooltip";
 
 export const Header = () => {
     return (
-        <header 
-        className="w-full h-auto p-4 flex items-center justify-center scroll-mt-16"
-        style={{
-            backgroundImage: 'linear-gradient(to right, rgba(32, 35, 41, 0.73), rgba(32, 35, 41, 0.8)), url(/bg.svg)',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover'
-        }}
+        <header id="Home"
+        className="w-full h-full p-4 flex items-center justify-center scroll-mt-16 bg-app"
         >
             <div className="w-auto container flex flex-col items-center justify-center rounded-2xl p-10">
                 <Image src='/images/profile.jpeg' className="profile-img rounded-full" width={300} height={300} alt="Igor personal headshot" />

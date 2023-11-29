@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const Footer = () => {
     return (
-        <footer className="bottom-0 w-full bg-[#202329] text-white flex justify-around items-center flex-col sm:flex-row p-3">
+        <footer className="bottom-0 w-full text-white flex justify-around items-center flex-col sm:flex-row p-3">
             <div className="foter_logo">
                 <a href="/" className="flex flex-row leading-[80px]">
                     <Image src="/images/profile_logo.png" width={80} height={10} alt="" className="rounded-full" />

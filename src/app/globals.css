@@ -14,6 +14,23 @@
   --branco: #ffffff;
   --cinza: #dcdcdc48;
   --cinza_bk: #202329;
+  --azul-escuro: #032030;
+  --azul-escuro-2: #022b42;
+  --azul-escuro-3: #003554;
+  --azul-escuro-4: #004d74;
+  --azul-escuro-5: #006494;
+  --azul-escuro-6: #006da4;
+}
+
+nav, footer {
+  background-color: var(--azul-escuro);
+}
+.active a {
+  color: var(--azul-escuro-6);
+}
+
+.bg-experience, .bg-projects {
+  background-color: var(--azul-escuro-3);
 }
 
 ::-webkit-scrollbar {
@@ -23,12 +40,12 @@
 
 /* Fundo da scrollbar */
 ::-webkit-scrollbar-track {
-  background-color: var(--cinza); /* Cor cinza claro */
+  background-color: var(--azul-escuro-3); /* Cor cinza claro */
 }
 
 /* Cor da área visível da scrollbar */
 ::-webkit-scrollbar-thumb {
-  background-color: var(--verde-claro);
+  background-color: var(--azul-escuro-6);
   border-radius: 6px;
 }
 
@@ -41,12 +58,12 @@
 
 /* Fundo da scrollbar */
 ::-moz-scrollbar-track {
-  background-color: var(--cinza); /* Cor cinza claro */
+  background-color: var(--azul-escuro-3); /* Cor cinza claro */
 }
 
 /* Cor da área visível da scrollbar */
 ::-moz-scrollbar-thumb {
-  background-color: var(--verde-claro);
+  background-color: var(--azul-escuro-6);
   border-radius: 6px;
 }
 
@@ -59,17 +76,17 @@
 
 /* Fundo da scrollbar */
 ::-ms-scrollbar-track {
-  background-color: var(--cinza); /* Cor cinza claro */
+  background-color: var(--azul-escuro-3); /* Cor cinza claro */
 }
 
 /* Cor da área visível da scrollbar */
 ::-ms-scrollbar-thumb {
-  background: var(--verde-claro);
+  background: var(--azul-escuro-6);
   border-radius: 6px;
 }
 
 ::selection {
-  background-color: var(--verde-claro);
+  background-color: var(--azul-escuro-6);
   color: var(--preto);
 }
 
@@ -90,17 +107,26 @@ body {
 }
 
 .bg-tec {
-  background-color: var(--cinza_bk);
+  background-color: var(--azul-escuro);
   color: var(--branco);
 }
 .bg-tec:hover {
-  background-color: #32353b;
+  
+  -webkit-box-shadow: 0px 6px 26px 3px rgba(0,100,148,1);
+-moz-box-shadow: 0px 6px 26px 3px rgba(0,100,148,1);
+box-shadow: 0px 6px 26px 3px rgba(0,100,148,1);
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   color: var(--branco);
   cursor: pointer;
 }
 
 .bg_app {
-  background-image: linear-gradient(to right, rgba(32, 35, 41, 0.73), rgba(32, 35, 41, 0.8)), url(/bg.svg);
+  background-image: linear-gradient(to right, rgba(3, 32, 48, 0.73), rgba(3, 32, 48, 0.8)), url(/bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }

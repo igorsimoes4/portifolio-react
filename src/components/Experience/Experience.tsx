@@ -4,7 +4,7 @@ export const Experience = () => {
             <div className='w-auto'>
                 <h1 className="text-4xl text-white  text-center p-0 mb-5">Experiência</h1>
                 <div className="grid grid-cols-1 gap-4">                    
-                    <div className=" bg-[#202329] rounded-xl shadow-md overflow-hidden">
+                    <div className=" bg-experience rounded-xl shadow-md overflow-hidden">
                         <div className="w-full flex flex-col lg:flex-row">
                             <div className="lg:w-1/4 w-full sm:justify-center flex justify-center">
                                 <img src="https://scontent.fpoa47-1.fna.fbcdn.net/v/t39.30808-6/295340970_1999801200211811_6667735421717615039_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEVfkAwLYka_0T7OumS7P7Y82gfMZx384LzaB8xnHfzgkI8m4OnrVE_whR2rI-lsUXuf_FYlUsReGzAuT2YysCX&_nc_ohc=tDgfoMQ_SV8AX_noRyF&_nc_ht=scontent.fpoa47-1.fna&oh=00_AfAg5oWnA6ICOXmqK23KElbkfPwHz2HACgyyncweCB4b6w&oe=65618807" alt="" className=" w-[100%] justify-center items-center" />                                    
