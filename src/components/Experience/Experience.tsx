@@ -10,7 +10,7 @@ export const Experience = () => {
                                 <img src="/images/logo_guanella.jpg" alt="" className=" w-[100%] justify-center items-center" />                                    
                             </div>
                             <div className="lg:w-3/4 w-full p-8">                            
-                                <h3 className="block mt-1 text-lg leading-tight font-medium text-white">Técnico de TI</h3>
+                                <h3 className="block mt-1 text-lg leading-tight font-medium text-white">Técnico de TI - Programador PHP</h3>
                                 <p className="mt-2 text-slate-50">Associação Servos da Caridade - Escola São Luís Guanella</p>
                                 <p className=" text-slate-50">maio de 2017 - outubro de 2022 · 5 anos 6 meses</p>
                                 <p className=" text-slate-50">Porto Alegre, Rio Grande do Sul, Brasil · Presencial</p>
