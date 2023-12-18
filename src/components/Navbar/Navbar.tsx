@@ -23,7 +23,7 @@ export const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`flex flex-col sm:flex-row mx-auto p-3 justify-around items-center leading-[80px] ${isScrolled ? 'fixed top-0 w-full' : ''}`}>
+        <nav className={`flex flex-col sm:flex-row mx-auto p-3 justify-around items-center leading-[80px] ${isScrolled ? 'fixed top-0 w-full z-50' : ''}`}>
             <a href="/" className="navbar-brand flex flex-row">
                 <Image src="/images/profile_logo.png" width={80} height={10} alt="" className="rounded-full" />
                 <h1 className='text-white ml-2'>Igor Simões da Silveira</h1>
